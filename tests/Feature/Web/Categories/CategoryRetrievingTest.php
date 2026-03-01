@@ -10,6 +10,7 @@ use App\Models\Category;
 
 class CategoryRetrievingTest extends TestCase
 {
+    use RefreshDatabase, WithFaker;
     /**
      * A basic feature test example.
      */
