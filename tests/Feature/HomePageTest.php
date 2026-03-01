@@ -14,8 +14,7 @@ class HomePageTest extends TestCase
     public function test_home_page_is_working(): void
     {
         $response = $this->get('/');
-        dd($response);
-
+        $response->assertSee('Laravel');
         $response->assertStatus(200);
     }
 }
